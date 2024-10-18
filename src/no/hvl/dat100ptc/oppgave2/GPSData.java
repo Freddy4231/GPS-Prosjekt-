@@ -9,8 +9,13 @@ public class GPSData {
 	protected int antall = 0;
 
 	public GPSData(int antall) {
-
-		throw new UnsupportedOperationException(TODO.method());
+		for (antall = 0; antall < gpspoints.length; antall++) {
+			
+		}
+			
+		
+		
+	//	throw new UnsupportedOperationException(TODO.method());
 		
 		// TODO
 	}

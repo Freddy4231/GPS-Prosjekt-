@@ -25,43 +25,71 @@ public class GPSUtils {
 	public static double findMin(double[] da) {
 
 		double min;
-
-		// TODO 
-		throw new UnsupportedOperationException(TODO.method());
 		
-	}
+		min = da[0];
+		
+		for (double d : da) {
+			if (d < min) {
+				min = d;
+			}
+		}
+			
+		return min;
+		// TODO 
+	//	throw new UnsupportedOperationException(TODO.method());
+		
+	}	
 
 	public static double[] getLatitudes(GPSPoint[] gpspoints) {
 
-		throw new UnsupportedOperationException(TODO.method());
+		double[] tab = new double [gpspoints.length];
 		
+		for (int i = 0; i < gpspoints.length; i++) {
+			tab[i] = gpspoints[i].getLatitude();
+		}
+		
+		//throw new UnsupportedOperationException(TODO.method());
+		return tab;	
 		// TODO
 	}
 
 	public static double[] getLongitudes(GPSPoint[] gpspoints) {
-
+		double[] tab = new double [gpspoints.length];
 		
-		throw new UnsupportedOperationException(TODO.method());
-		
+		for (int i = 0; i < gpspoints.length; i ++) {
+			tab[i] = gpspoints[i].getLongitude();
+		}
+	//	throw new UnsupportedOperationException(TODO.method());
 		// TODO 
-
+		return tab; 
 	}
 
 	private static final int R = 6371000; // jordens radius
 
 	public static double distance(GPSPoint gpspoint1, GPSPoint gpspoint2) {
 
+		
 		double d;
-		double latitude1, longitude1, latitude2, longitude2;
+		double latitude1 = gpspoint1.getLatitude();
+		double longitude1
+		
+		, latitude2, longitude2;
 
-		throw new UnsupportedOperationException(TODO.method());
+		GPSPoint gpspoint1 = new GPSPoint();
+		
+		
+		//throw new UnsupportedOperationException(TODO.method());
 
 		// TODO 
 	}
 	
 	private static double compute_a(double phi1, double phi2, double deltaphi, double deltadelta) {
-	
-		throw new UnsupportedOperationException(TODO.method());
+		phi1 = latitude1;
+		
+		double a = ;
+		
+		
+	//	throw new UnsupportedOperationException(TODO.method());
 		
 		// TODO 
 
