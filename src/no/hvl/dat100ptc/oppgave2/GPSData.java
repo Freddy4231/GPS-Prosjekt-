@@ -8,10 +8,13 @@ public class GPSData {
 	private GPSPoint[] gpspoints;
 	protected int antall = 0;
 
-	public GPSData(int antall) {
-		for (antall = 0; antall < gpspoints.length; antall++) {
-			
-		}
+	public GPSData(int antall, int n) {
+		this.antall = 0;
+		this.gpspoints = new GPSPoint[antall];
+		
+//		for (antall = 0; n < GPSPoint[0].length; antall++) {
+//			
+//		}
 			
 		
 		
